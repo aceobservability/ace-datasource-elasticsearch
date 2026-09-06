@@ -252,7 +252,7 @@ func appendMetricPoint(seriesBySignature map[string]*metricSeries, metric map[st
 	series.Values = append(series.Values, []interface{}{
 		timestamp,
 		strconv.FormatFloat(value, 'f', -1, 64),
- mar	})
+	})
 }
 
 func extractSourceRows(response map[string]interface{}) []map[string]interface{} {
